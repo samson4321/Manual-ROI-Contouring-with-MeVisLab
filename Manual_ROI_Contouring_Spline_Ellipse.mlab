@@ -1,0 +1,401 @@
+// MDL v1 utf8
+mevislabVersion = 4.1.3.7
+network  {
+  watchlist = ""
+}
+module SoCSOEllipseEditor {
+  internal  {
+    frame = "401 549 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2709 354 340 432"
+        relativePosition = "-0.0005 -0.1560"
+        sizeHint = "340 432"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCSOEllipseEditor
+    extensionId = ellipse
+    allowCreation = TRUE
+    allowModification = TRUE
+    allowSeedPointInteraction = TRUE
+    shouldRender = TRUE
+    selectionCursor = POINTING_HAND_CURSOR
+    interactionForbiddenCursor = FORBIDDEN_CURSOR
+    moduleCreatorId = 0
+    moduleCreatorString = SoCSOEllipseEditor
+    labelPrefixString = CSO
+    requirePointerPositionMovementToCreateCSO = FALSE
+    pointerPositionEpsilonForCreatingCSO = 1
+    createCursor = CROSS_OVAL_CURSOR
+    moveAllCursor = MOVE_ALL_CURSOR
+    moveSeedCursor = CROSS_CURSOR
+    shouldEmptyGroupBeforeGenerating = TRUE
+    addCSOToGroupMode = GROUP_NONE
+    addCSOToGroupLabel = ""
+    addCSOToGroupId = -1
+    defaultPathPointStyle = PATH_POINTS_STYLE_SOLID
+    defaultPathPointWidth = 1
+    defaultPathPointColor = "1 1 1"
+    defaultPathPointAlpha = 1
+    defaultSeedPointStyle = SEED_POINT_STYLE_RECTANGLE
+    defaultSeedPointSize = 3
+    defaultSeedPointColor = "1 1 1"
+    defaultSeedPointAlpha = 1
+    defaultVoxelWriteMode = VOXEL_WRITE_MODULE
+    defaultVoxelWriteValue = 1024
+    isCircle = FALSE
+    ellipseCreationRatio = 0.25
+    shouldUseShiftToToggleCircleEllipse = TRUE
+    createCircleWithSingleClick = FALSE
+    singleClickCircleRadius = 8
+    shouldKeepCenterConstant = FALSE
+    pointDensityMode = DENSITY_SCREEN_PIXEL
+    densityFactor = 0.1
+  }
+}
+module SoCSOSplineEditor {
+  internal  {
+    frame = "193 541 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2112 301 516 626"
+        relativePosition = "-0.2656 -0.2074"
+        sizeHint = "340 406"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCSOSplineEditor
+    extensionId = spline
+    allowCreation = TRUE
+    allowModification = TRUE
+    allowSeedPointInteraction = TRUE
+    shouldRender = TRUE
+    selectionCursor = POINTING_HAND_CURSOR
+    interactionForbiddenCursor = FORBIDDEN_CURSOR
+    moduleCreatorId = 0
+    moduleCreatorString = SoCSOSplineEditor
+    labelPrefixString = CSO
+    requirePointerPositionMovementToCreateCSO = FALSE
+    pointerPositionEpsilonForCreatingCSO = 1
+    createCursor = CROSS_FREEFORM_CURSOR
+    moveAllCursor = MOVE_ALL_CURSOR
+    moveSeedCursor = CROSS_CURSOR
+    shouldEmptyGroupBeforeGenerating = TRUE
+    addCSOToGroupMode = GROUP_NONE
+    addCSOToGroupLabel = ""
+    addCSOToGroupId = -1
+    defaultPathPointStyle = PATH_POINTS_STYLE_SOLID
+    defaultPathPointWidth = 1
+    defaultPathPointColor = "1 1 1"
+    defaultPathPointAlpha = 1
+    defaultSeedPointStyle = SEED_POINT_STYLE_RECTANGLE
+    defaultSeedPointSize = 3
+    defaultSeedPointColor = "1 1 1"
+    defaultSeedPointAlpha = 1
+    defaultVoxelWriteMode = VOXEL_WRITE_MODULE
+    defaultVoxelWriteValue = 1024
+    generateSeedPointsWhileDragging = FALSE
+    insertSeedPointByClickingOnPathPointList = TRUE
+    insertSeedPointCursor = CROSS_PLUS_CURSOR
+    canCloseCursor = CROSS_LINK_CURSOR
+    useFreehandMode = FALSE
+    shouldCloseFreehandOnRelease = FALSE
+    doubleClickMode = CSO_SPLINE_EDITOR_DOUBLE_CLICK_FINISH
+    pointDensityMode = DENSITY_MIN_VOXEL_EXTENT
+    densityFactor = 1
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "273 437 80 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoGroup
+  }
+}
+module CSOManager {
+  internal  {
+    frame = "193 133 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2529 279 701 582"
+        relativePosition = "0.0000 -0.2287"
+        sizeHint = "701 582"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOManager
+    workDirectlyOnInputCSOList = FALSE
+    updateCsoDisplayTree = TRUE
+    updateGroupDisplayTree = TRUE
+    selectLastCreatedGroup = TRUE
+    selectionColoringMode = SelectionColorModeFixed
+    selectionLineWidthMode = SelectionLineWidthWiden
+    selectionBrightenColor = 0.2
+    selectionFixedColor = "1 1 0.600000023841858"
+    selectionWidenLineWidth = 1
+    selectionFixedLineWidth = 2
+    selectedSeedPointColoringMode = SelectedSeedPointColorModeFixed
+    selectedSeedPointSizeMode = SelectedSeedPointSizeModeEnlarge
+    selectedSeedPointBrightenColor = 0.5
+    selectedSeedPointFixedColor = "0 1 0"
+    selectedSeedPointEnlargeSize = 1
+    selectedSeedPointSize = 1
+    csoDefaultLabel = ""
+    csoDefaultLabelAddUniqueId = FALSE
+    csoDefaultLabelUniqueIdFormat = " (%i)"
+    csoDefaultLabelAddUniqueIdAlways = FALSE
+    csoDefaultDescription = ""
+    csoDefaultShowState = TRUE
+    csoDefaultVoxelizeState = TRUE
+    csoDefaultEditableState = TRUE
+    groupSingleDeleteGroupCSOHandling = RemoveIfInNoGroup
+    groupDefaultLabel = ""
+    groupDefaultLabelAddUniqueId = FALSE
+    groupDefaultLabelUniqueIdFormat = " (%i)"
+    groupDefaultLabelAddUniqueIdAlways = FALSE
+    groupDefaultDescription = ""
+    groupDefaultUseTimePointIndex = FALSE
+    groupDefaultTimePointIndex = 0
+    groupDefaultUseShowState = FALSE
+    groupDefaultShowState = TRUE
+    groupDefaultUseVoxelizeState = FALSE
+    groupDefaultVoxelizeState = TRUE
+    groupDefaultUseEditableState = FALSE
+    groupDefaultEditableState = TRUE
+    groupDefaultUsePathPointStyle = FALSE
+    groupDefaultPathPointStyle = LineStyleSolid
+    groupDefaultUsePathPointWidth = FALSE
+    groupDefaultPathPointWidth = 1
+    groupDefaultUsePathPointColor = FALSE
+    groupDefaultPathPointColor = "1 1 1"
+    groupDefaultUsePathPointAlpha = FALSE
+    groupDefaultPathPointAlpha = 1
+    groupDefaultUseSeedPointStyle = FALSE
+    groupDefaultSeedPointStyle = MarkerModeRect
+    groupDefaultUseSeedPointSize = FALSE
+    groupDefaultSeedPointSize = 3
+    groupDefaultUseSeedPointColor = FALSE
+    groupDefaultSeedPointColor = "0 1 0"
+    groupDefaultUseSeedPointAlpha = FALSE
+    groupDefaultSeedPointAlpha = 1
+    groupDefaultUseVoxelWriteMode = FALSE
+    groupDefaultVoxelWriteMode = VoxelWriteModeModule
+    groupDefaultUseVoxelWriteValue = FALSE
+    groupDefaultVoxelWriteValue = 1024
+    groupDefaultNumMaximumCSOs = 0
+    groupDefaultOverflowHandling = RemoveFirst
+    groupDefaultRemoveFromGroupHandling = RemoveIfInNoGroup
+    groupDefaultDeleteGroupCSOHandling = RemoveIfInNoGroup
+    listSingleRemoveEmptyGroupHandling = RemoveAlways
+    listDefaultRemoveEmptyGroupHandling = RemoveAlways
+    enableUndoRedo = TRUE
+    numUndos = 4
+    numRedos = 0
+    undoStackLimit = 16
+    useSelectionCSONotification = FALSE
+    useSelectionGroupNotification = FALSE
+    useFinishedCSONotification = FALSE
+    useFinishedGroupNotification = FALSE
+    useCSOMovedNotification = FALSE
+    useRepaintNotification = FALSE
+    useInteractionInitNotification = FALSE
+    useStartNewCSONotification = FALSE
+    enableSelectionNotification = TRUE
+    enableFinishedNotification = TRUE
+    enableCSOMovedNotification = TRUE
+    enableRepaintNotification = TRUE
+    outputApplicationEventsDebug = FALSE
+    csoTreeView = ""
+    groupTreeView = ""
+    numSelectedCSOs = 1
+    numSelectedGroups = 0
+    selectedCSOsGroupIds = ""
+    csoTabSelected = TRUE
+    groupTabSelected = FALSE
+    selectionTabSelected = FALSE
+    notificationTabSelected = FALSE
+    defaultTabSelected = FALSE
+    csoCommonTabSelected = TRUE
+    csoVisualsTabSelected = FALSE
+    groupCommonTabSelected = FALSE
+    groupVisualsTabSelected = FALSE
+    groupMiscTabSelected = FALSE
+    notificationControlTabSelected = FALSE
+    notificationOutputCSOTabSelected = FALSE
+    notificationOutputGroupTabSelected = FALSE
+    defaultCSOCommonTabSelected = FALSE
+    defaultGroupCommonTabSelected = FALSE
+    defaultGroupVisualsTabSelected = FALSE
+    defaultGroupMiscTabSelected = FALSE
+  }
+}
+module LocalImage {
+  internal  {
+    frame = "9 517 96 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = LocalImage
+    name = $(DemoDataPath)/BrainMultiModal/ProbandT1.dcm
+    autoLoad = TRUE
+  }
+}
+module View2D {
+  internal  {
+    frame = "21 37 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "3112 374 576 446"
+        relativePosition = "0.2708 -0.1366"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 42
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_Z
+    cineDirection = CINE_PINGPONG
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = FALSE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 0.0849512442946434
+    lutWidth = 0.180124655365944
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_SHORT
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    maxPrecision = 4
+    enableSlicing = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    useRelativeLUTIfNoInputImage = FALSE
+  }
+}
+module SoView2DCSOExtensibleEditor {
+  internal  {
+    frame = "317 285 200 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "3215 183 386 382"
+        relativePosition = "0.2750 -0.3217"
+        sizeHint = "386 382"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DCSOExtensibleEditor
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 16
+    needsValidVoxel = TRUE
+    button1 = PRESSED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    creatorExtensionId = spline
+    alwaysCreateNewCSOs = FALSE
+    alwaysModifyExistingCSOs = FALSE
+    keyCommandsEnabled = TRUE
+    enableRemoveAll = FALSE
+    interactOnlyWithSelectedCSO = FALSE
+    renderLeftOverCSOsWithDefaultRenderer = TRUE
+    allowSelectionWithDefaultRenderer = FALSE
+    renderCSOsOnImagesDependingOnCreationMode = ON_ALL_IMAGES
+    updateCSOIdUnderMouseCursor = TRUE
+    accumulateTransformations = FALSE
+    updateImageStatisticsOnFinishInteraction = FALSE
+  }
+}
+connections  {
+  SoGroup.children = "SoCSOSplineEditor.self SoCSOEllipseEditor.self"
+  View2D.inImage = LocalImage.outImage
+  View2D.inInvPreLUT = SoView2DCSOExtensibleEditor.self
+  SoView2DCSOExtensibleEditor.inCSOList = CSOManager.outCSOList
+  SoView2DCSOExtensibleEditor.inExtensions = SoGroup.self
+}
+networkModel  {
+  parentItems  {
+    0  {
+      MLABNetworkModelItem MLABNoteItem {
+        uniqueId = 20
+        objectName = ""
+        parentUniqueId = 0
+        frame = "1594 -49 218 231"
+        backgroundColor  {
+          r = 252
+          g = 242
+          b = 2
+          a = 255
+        }
+        text = "- set the Creator Extension Id of the extensible editor to '__default' or to 'spline' to create a spline CSO
+
+- note that the global visualization settings overwrite only if there is no local visualization settings
+
+- remove the attached sub-editors and check the option 'Render left-over CSOs with default renderer'"
+        titleText = "How To"
+        isCollapsed = True
+        drawAsComment = False
+        titleFrame = "1599 -44 78 22"
+      }
+    }
+  }
+}
